@@ -1,0 +1,61 @@
+/* Custom styles for the footer */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* Styles for the body */
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Styles for the profile picture */
+  .profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  /* Styles for the name caption */
+  .name-caption {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4081;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the text on the left */
+  .text-content {
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Additional modern and colorful styles */
+  body {
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  .name-caption {
+    color: #ff4081;
+  }
+  
+  .text-content {
+    color: #555;
+  }
+  

@@ -1,0 +1,31 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Welcome to My Portfolio!</h1>
+        <p>Check out my projects and get in touch with me.</p>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
+    </header>
+
+    <!-- Content section (will be overridden in child templates) -->
+    {% block content %}
+    {% endblock %}
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Your footer content here</span>
+        </div>
+    </footer>
+</body>
+</html>
