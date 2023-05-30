@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>About</title>
-</head>
-<body>
-    <h1>About Me</h1>
-    <p>This is information about me and my skills.</p>
-    <a href="/">Home</a>
-    <a href="/projects">Projects</a>
-    <a href="/contact">Contact</a>
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+    <h2>About</h2>
+    <p>This is the about page. Here you can learn more about me and my work.</p>
+
+    <h2>Resume</h2>
+    <a href="../media/resume.pdf" target="_blank">Download Resume</a>
+
+    <pre>
+        
+    </pre>
+{% endblock %}
