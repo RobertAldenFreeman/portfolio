@@ -50,13 +50,13 @@ Log out and log back in again to pick up the new Docker group permissions. You c
 Pull your Docker image:
 
 ```
-docker pull <your_username>/app.py
+docker pull <your_username>/portfolio-website
 ```
 
 Now, you can run your Docker image:
 
 ```
-docker run -d -p 80:80 <your_username>/app.py
+docker run -d -p 80:80 <your_username>/portfolio-website
 ```
 
 Your application should now be running on your Lightsail instance, and you should be able to access it by navigating to the public IP address of your instance in your web browser.
