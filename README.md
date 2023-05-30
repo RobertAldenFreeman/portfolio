@@ -8,7 +8,7 @@ First, you'll need to set up a new Lightsail instance:
 
 1. Navigate to the [Lightsail home page](https://aws.amazon.com/lightsail/) and click the `Create instance` button.
 2. Choose `Linux/Unix` platform, and then select `OS Only` and `Amazon Linux 2`.
-3. Choose your instance plan (the cheapest should be sufficient for basic applications).
+3. Choose your instance plan (the cheapest should be sufficient).
 4. Name your instance and click `Create instance`.
 
 Wait a few moments for your instance to be created. You will then see your new instance in the Lightsail home page.
