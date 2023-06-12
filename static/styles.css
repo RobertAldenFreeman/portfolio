@@ -80,3 +80,38 @@ ul li:before {
 .text-white {
   color: #fff;
 }
+
+.baseball-card-left {
+  background-color: #333333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.baseball-card-right {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #333333;
+}
+

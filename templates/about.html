@@ -1,12 +1,53 @@
+<!-- about.html -->
 {% extends "base.html" %}
+
 {% block content %}
-    <h2>About</h2>
-    <p>This is the about page. Here you can learn more about me and my work.</p>
-
-    <h2>Resume</h2>
-    <a href="../media/resume.pdf" target="_blank">Download Resume</a>
-
-    <pre>
-        
-    </pre>
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body bg-dark text-white">
+                        <h2 class="card-title">Experience and Passion</h2>
+                        <div class="job-experience">
+                            <h4>Passion for Mathematics, Machine Learning, and Microservices Architecture</h4>
+                            <p>
+                                I am a software enthusiast with a strong passion for mathematics, machine learning, and microservices architecture. I am fascinated by the power of mathematical principles in solving complex problems and leveraging machine learning techniques to extract insights from data.
+                                <br><br>
+                                My interest in microservices architecture stems from its ability to build scalable and resilient systems. I enjoy designing loosely coupled services that communicate through lightweight message passing, enabling flexibility and modularity in software solutions.
+                            </p>
+                        </div>
+                        <div class="job-experience">
+                            <h4>Experience with Technologies and Deployments</h4>
+                            <p>
+                                Throughout my career, I have gained experience in a variety of technologies and deployments. I have a strong command over technologies like Redis, Docker, and Kubernetes, which I have utilized to build robust and scalable systems. I have successfully released multiple software versions and succesively deployed those same software releases and performed successive deployments in mission-critical environments, including India and Japan, for aircraft systems.
+                                <br><br>
+                                I have also worked with Ansible, a powerful automation tool, to streamline software deployment processes and ensure consistency across environments. My experience in managing deployments across different locations has given me valuable insights into the complexities of global software delivery.
+                            </p>
+                        </div>
+                        <div class="job-experience">
+                            <h4>Leadership and Mentorship</h4>
+                            <p>
+                                Currently, I hold a leadership position at General Atomics - Aeronautical Systems, where I lead a team of software developers. I have successfully mentored six interns over two summers, providing guidance and support to help them grow in their technical skills and professional development. I believe in fostering a collaborative and inclusive work environment where every team member can thrive and contribute to the success of the projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="baseball-card text-center">
+                    <div class="staggered-images">
+                        <div class="staggered-image top-left">
+                            <img src="profile-picture-1.jpg" alt="Profile Picture 1" class="profile-picture">
+                        </div>
+                        <div class="staggered-image middle-right">
+                            <img src="C:\Users\rober\repos\portfolio\media\drone.png" alt="Profile Picture 2" class="profile-picture">
+                        </div>
+                        <div class="staggered-image bottom-left">
+                            <img src="profile-picture-3.jpg" alt="Profile Picture 3" class="profile-picture">
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
 {% endblock %}
