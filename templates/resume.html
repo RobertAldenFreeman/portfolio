@@ -1,19 +1,85 @@
-<h1>ROBERT FREEMAN</h1>
-<p><i>Software Engineer | Project Lead | Network Administrator</i></p>
+{% extends "base.html" %}
 
-<h2>WORK EXPERIENCE</h2>
-
-<h3>Software Developer, General Atomics - Aeronautical Systems (January 2022 - Present)</h3>
-<ul>
-  <li>Orchestrated the successful execution of two complex software projects utilizing C# and C++, leading to significant improvements in system performance.</li>
-  <li>Implemented effective strategies for obtaining insightful feedback on software decisions, fostering a culture of open collaboration within the team.</li>
-  <!-- Other bullet points... -->
-</ul>
-
-<h3>Software Engineer Intern, Accel Robotics (June 2021 - September 2021)</h3>
-<ul>
-  <li>Enhanced network service commands by adding to the Pub/Sub framework using gRPC.</li>
-  <li>Improved the reliability of the software pipeline by expanding the automation capabilities using Jenkins and Pytest.</li>
-</ul>
-
-<!-- More sections... -->
+{% block content %}
+    <div class="container pt-5">
+        <div class="jumbotron text-center" style="background-color: #1b1b1b;">
+            <h1 class="display-4 text-white">Robert Freeman</h1>
+            <p class="lead text-white">Software Enthusiast</p>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-3">
+                    <div class="card-body bg-dark text-white">
+                        <h2 class="card-title">Work Experience</h2>
+                        <div class="job-experience">
+                            <h4>Software Developer, General Atomics - Aeronautical Systems</h4>
+                            <h5>January 2022 - Present</h5>
+                            <ul>
+                                <li>Leading two software projects in C# and C++.</li>
+                                <li>Pursuing feedback on software decisions with my team members using code reviews in Microsoft Teams Foundation Server. The workflow involves creating, triaging, fixing or delegating bug fixes.</li>
+                                <li>Driving the software life-cycle using agile principals and discussing product requirements with stakeholders as well as writing actionable documentation.</li>
+                                <li>Delivering tested code within a time frame in a team environment.</li>
+                                <li>Writing new features, fixing existing bugs and holding PowerPoint presentations for stakeholders, test team members and management.</li>
+                                <li>Administration of computer networks (Windows Group Policies).</li>
+                                <li>Troubleshooting network connectivity using Wireshark and Colasoft.</li>
+                                <li>Proficient in usage of protocol buffers for Redis message brokering.</li>
+                            </ul>
+                        </div>
+                        <div class="job-experience">
+                            <h4>Software Engineer Intern, Accel Robotics</h4>
+                            <h5>June 2021 - September 2021</h5>
+                            <ul>
+                                <li>Adding to the Pub/Sub framework to accomplish start commands for services over the network using gRPC.</li>
+                                <li>Improving and extending an automated software test pipeline using Jenkins and Pytest.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body bg-dark text-white">
+                        <h2 class="card-title">Education</h2>
+                        <div class="education">
+                            <h4>San Francisco State University</h4>
+                            <h5>August 2019 - May 2021</h5>
+                            <p>Bachelor of Science, Computer Science</p>
+                        </div>
+                        <div class="education">
+                            <h4>San Diego Mesa College</h4>
+                            <h5>August 2018 - May 2019</h5>
+                            <p>Associate of Arts, Applied Mathematics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body bg-dark text-white">
+                        <h2 class="card-title">Technical Strengths</h2>
+                        <div class="strengths">
+                            <h4>Skills</h4>
+                            <p>C#, C++, Python, Network Troubleshooting, Object-Oriented Programming, Functional Programming, REST, Bash</p>
+                        </div>
+                        <div class="strengths">
+                            <h4>Software</h4>
+                            <p>GitHub, TFS, MSVS, MySQL Workbench</p>
+                        </div>
+                        <div class="strengths">
+                            <h4>Tools</h4>
+                            <p>gRPC, Redis, VirtualBox, Docker, AWS, UNIX, Vim, net-tools, tmux, Wireshark, Colasoft, Ansible, Jira, Jenkins CI/CD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body bg-dark text-white">
+                        <h2 class="card-title">Projects</h2>
+                        <div class="projects">
+                            <a href="https://github.com/RobertAldenFreeman/exceptional-site" target="_blank">E-commerce site developed using Python, FastAPI, HTML, CSS and JavaScript</a>
+                            <a href="https://github.com/RobertAldenFreeman/food-delivery-application" target="_blank">Food Delivery Application using Python and Flask</a>
+                            <a href="https://github.com/RobertAldenFreeman/e-commerce-site" target="_blank">E-commerce site using JavaScript, React, Redux, Node.js</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
