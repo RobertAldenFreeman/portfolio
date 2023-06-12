@@ -49,6 +49,11 @@ ul li:before {
   margin-left: -1em;
 }
 
+.navbar-nav li:before {
+  content: none;
+}
+
+
 .job-experience h4,
 .education h4,
 .strengths h4 {
@@ -115,3 +120,49 @@ ul li:before {
   background-color: #333333;
 }
 
+.baseball-card {
+  position: relative;
+}
+
+.staggered-images {
+  position: relative;
+}
+
+.staggered-image {
+  position: absolute;
+}
+
+.staggered-image.top-left {
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.staggered-image.middle-right {
+  top: 60px; /* Adjust the value as needed to achieve the desired overlap */
+  right: 0;
+  z-index: 2;
+}
+
+.staggered-image.bottom-left {
+  top: 120px; /* Adjust the value as needed to achieve the desired overlap */
+  left: 0;
+  z-index: 3;
+}
+
+.profile-picture {
+  width: 100px; /* Adjust the size of the profile pictures as needed */
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar-nav .li {
+  list-style-type: none;
+}
+
+.nav-link {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

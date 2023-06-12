@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container pt-5">
+        <div class="jumbotron text-center" style="background-color: #1b1b1b;">
+            <h1 class="display-4 text-white">Messages</h1>
+        </div>
+        <div id="messagesList" class="card mb-3">
+            <div class="card-body bg-dark text-white">
+                <h2 class="card-title">Inbox</h2>
+                <ul id="messages">
+                    {% for message in messages %}
+                        <li>{{ message[0] }} - {{ message[1] }}: {{ message[2] }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js"></script>
+    <script>
+        var socket = io.connect();
+        socket.on('initial_messages', function(messages) {
+            var messagesList = document.getElementById('messages');
+            messages.forEach(function(message) {
+                var li = document.createElement('li');
+                li.textContent = message[0] + ' - ' + message[1] + ': ' + message[2];
+                messagesList.appendChild(li);
+            });
+        });
+        socket.on('new_message', function(data) {
+            var message = data.name + ' - ' + data.email + ': ' + data.message;
+            var li = document.createElement('li');
+            li.textContent = message;
+            document.getElementById('messages').appendChild(li);
+        });
+    </script>
+{% endblock %}

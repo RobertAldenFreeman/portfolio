@@ -22,16 +22,13 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active text-white">
-                        <a class="nav-link text-white" href="/">About</a>
-                    </li>
-                    <li class="nav-item active text-white">
+                    <li class="nav-item text-white">
                         <a class="nav-link text-white" href="/resume ">Resume</a>
                     </li>
-                    <li class="nav-item active text-white">
+                    <li class="nav-item text-white">
                         <a class="nav-link text-white" href="/projects">Projects</a>
                     </li>
-                    <li class="nav-item active text-white">
+                    <li class="nav-item text-white">
                         <a class="nav-link text-white" href="/contact">Contact</a>
                     </li>
                     <a class="nav-item disabled" href="#" style="display: flex; justify-content: flex-end;">
@@ -62,35 +59,6 @@
             <span class="text-muted">Robert A Freeman - Software Developer</span>
         </div>
     </footer>
-
-    <!-- Footer animation for scrolling to the bottom of page -->
-
-    <script>
-        window.onload = checkScroll;
-        window.onscroll = checkScroll;
-    
-        function checkScroll() {
-            var footer = document.querySelector('.footer');
-            if (window.innerHeight >= document.body.offsetHeight || 
-                window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-                // Entire content fits in viewport or user has scrolled to bottom of page, show the footer
-                footer.classList.add('show');
-            } else {
-                // User has scrolled up, hide the footer
-                footer.classList.remove('show');
-            }
-        };
-
-        // Wait for the page to load before applying the animation class
-        window.addEventListener('DOMContentLoaded', function () {
-            var isHomePage = window.location.pathname === '/'; // Modify this path according to your homepage URL
-
-            if (isHomePage) {
-                var welcomeText = document.getElementById('welcome-text');
-                welcomeText.classList.add('fade-in-text');
-            }
-        });
-    </script>
 
 </body>
 </html>
